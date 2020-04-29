@@ -29,9 +29,9 @@ namespace SmartACClient
         private static readonly HttpClient client = new HttpClient();
 
         //TODO: switch these urls to the dev environment once it's available.
-        private const string deviceURI = "https://localhost:44351/devices";
-        private const string measurementsURI = "https://localhost:44351/devices/{0}/measurements";
-        private const string authURI = "https://localhost:44351/authenticate";
+        private const string deviceURI = "http://smartacdeviceapi-dev.us-west-1.elasticbeanstalk.com/devices";
+        private const string measurementsURI = "http://smartacdeviceapi-dev.us-west-1.elasticbeanstalk.com/devices/{0}/measurements";
+        private const string authURI = "http://smartacdeviceapi-dev.us-west-1.elasticbeanstalk.com/authenticate";
         private const string backupFile = @"C:\temp\measurements";
 
         static async Task Main(string[] args)
